@@ -35,7 +35,8 @@ public class NewTaskActivity extends Activity implements View.OnClickListener {
         switch(v.getId()) {
             case R.id.btnOk:
                 intent = new Intent(this, MainActivity.class);
-                intent.putExtra("message", et.getText().toString());
+                if (!et.getText().toString().equals(""))
+                    intent.putExtra("message", et.getText().toString());
                 this.startActivity(intent);
                 break;
             case R.id.btnCancel:

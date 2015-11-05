@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".NewTaskActivity" >
+        <activity android:name=".NewTaskActivity"
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
